@@ -1,0 +1,8 @@
+.sidebarContainer {
+  box-sizing: border-box;
+  padding: 20px 16px 20px 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  border-right: 1px solid var(--color-neutral-200);
+}

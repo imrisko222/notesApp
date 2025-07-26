@@ -1,0 +1,109 @@
+button {
+  border-radius: var(--radius-8);
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  /* background-color: #1a1a1a; */
+  cursor: pointer;
+  transition: border-color 0.25s;
+  /* nasledujuce po skuske vymazat ak nevyhovuje */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.primary {
+  background-color: var(--color-blue-500);
+  color: #fff;
+}
+
+.primary:hover {
+  background-color: var(--color-blue-700);
+}
+
+.primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-neutral-0);
+  box-shadow: 0 0 0 4px rgba(153, 160, 174, 1);
+}
+
+.secondary {
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-600);
+}
+
+.secondary:hover {
+  background-color: var(--color-neutral-0);
+  border: var(--color-neutral-300) 1px solid;
+  color: var(--color-neutral-950);
+}
+
+.secondary:focus {
+  background-color: var(--color-neutral-0);
+  border: var(--color-neutral-950) 1px solid;
+  color: var(--color-neutral-950);
+  box-shadow: 0 0 0 2px var(--color-neutral-0);
+  box-shadow: 0 0 0 4px rgba(153, 160, 174, 1);
+}
+
+.border {
+  background-color: #f0f0f0;
+  color: var(--color-neutral-950);
+  border: var(--color-neutral-300) 1px solid;
+}
+
+.border:hover {
+  background-color: var(--color-neutral-100);
+  border: none;
+  color: var(--color-neutral-600);
+}
+
+.border:focus {
+  color: var(--color-neutral-950);
+  border: var(--color-neutral-950) 1px solid;
+  box-shadow: 0 0 0 2px var(--color-neutral-0);
+  box-shadow: 0 0 0 4px rgba(153, 160, 174, 1);
+}
+
+.danger {
+  background-color: var(--color-red-500);
+  color: var(--color-neutral-0);
+}
+
+.icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.border svg {
+  width: 24px;
+  height: 25px;
+}
+
+.preset1 {
+  font: var(--text-preset-inter-1);
+}
+
+.preset2 {
+  font: var(--text-preset-inter-2);
+}
+
+.preset3 {
+  font: var(--text-preset-inter-3);
+}
+
+.preset4 {
+  font: var(--text-preset-inter-4);
+}
+
+.preset5 {
+  font: var(--text-preset-inter-5);
+}
+
+.preset6 {
+  font: var(--text-preset-inter-6);
+}

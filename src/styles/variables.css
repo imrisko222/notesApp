@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&display=swap");
+
+:root {
+  /* === Colors === */
+  /* Neutrals */
+  --color-neutral-950: #0e121b;
+  --color-neutral-900: #191b25;
+  --color-neutral-800: #232530;
+  --color-neutral-700: #28303b;
+  --color-neutral-600: #525866;
+  --color-neutral-500: #717784;
+  --color-neutral-400: #999a0e;
+  --color-neutral-300: #cacfd8;
+  --color-neutral-200: #e0e4ea;
+  --color-neutral-100: #f3f5f8;
+  --color-neutral-50: #f5f7fa;
+  --color-neutral-0: #ffffff;
+
+  /* Primary Colors */
+  --color-blue-700: #2547d0;
+  --color-blue-500: #335cff;
+  --color-blue-50: #ebf1ff;
+
+  --color-green-500: #21c16b;
+  --color-green-100: #d1fbe9;
+
+  --color-red-500: #fb3748;
+  --color-red-100: #ffd5d8;
+
+  /* === Typography === */
+  /* Inter */
+  --text-preset-inter-1: 700 24px/120% "Inter", sans-serif;
+  --text-preset-inter-2: 700 20px/120% "Inter", sans-serif;
+  --text-preset-inter-3: 600 16px/120% "Inter", sans-serif;
+  --text-preset-inter-4: 500 14px/120% "Inter", sans-serif;
+  --text-preset-inter-5: 400 14px/120% "Inter", sans-serif;
+  --text-preset-inter-6: 400 12px/120% "Inter", sans-serif;
+
+  /* Source Code Pro */
+  --text-preset-mono-1: 700 24px/120% "Source Code Pro", monospace;
+  --text-preset-mono-2: 700 20px/120% "Source Code Pro", monospace;
+  --text-preset-mono-3: 600 16px/120% "Source Code Pro", monospace;
+  --text-preset-mono-4: 500 14px/120% "Source Code Pro", monospace;
+  --text-preset-mono-5: 400 14px/120% "Source Code Pro", monospace;
+  --text-preset-mono-6: 400 12px/120% "Source Code Pro", monospace;
+
+  /* Noto Serif */
+  --text-preset-serif-1: 700 24px/120% "Noto Serif", serif;
+  --text-preset-serif-2: 700 20px/120% "Noto Serif", serif;
+  --text-preset-serif-3: 600 16px/120% "Noto Serif", serif;
+  --text-preset-serif-4: 500 14px/120% "Noto Serif", serif;
+  --text-preset-serif-5: 400 14px/120% "Noto Serif", serif;
+  --text-preset-serif-6: 400 12px/120% "Noto Serif", serif;
+
+  --font-inter: "Inter", sans-serif;
+  --font-noto-serif: "Noto Serif", serif;
+  --font-source-code: "Source Code Pro", monospace;
+
+  /* Font sizes */
+  --fs-xxl: 24px;
+  --fs-xl: 20px;
+  --fs-lg: 16px;
+  --fs-md: 14px;
+  --fs-sm: 12px;
+
+  /* Line heights */
+  --lh-default: 120%;
+
+  /* Letter spacing */
+  --ls-tightest: -0.5px;
+  --ls-tighter: -0.3px;
+  --ls-tight: -0.2px;
+
+  /* === Spacing === */
+  --spacing-0: 0px;
+  --spacing-025: 2px;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-250: 20px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1000: 80px;
+
+  /* === Border Radius === */
+  --radius-0: 0px;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-24: 24px;
+  --radius-full: 999px;
+}
