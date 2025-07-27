@@ -8,11 +8,11 @@ button {
   /* nasledujuce po skuske vymazat ak nevyhovuje */
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   padding: 12px 16px;
   width: 100%;
 }
+
 
 .primary {
   background-color: var(--color-blue-500);
@@ -72,11 +72,28 @@ button {
   color: var(--color-neutral-0);
 }
 
+.content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
 .icon {
   display: flex;
-
   align-items: center;
   justify-content: center;
+}
+
+.endIcon {
+margin-left: auto;
+display: flex;
+align-items: center;
+justify-self: flex-end;
+}
+
+.noEndIcon {
+  justify-content: flex-start;
 }
 
 .border svg {
@@ -84,26 +101,46 @@ button {
   height: 25px;
 }
 
-.preset1 {
+.navigation {
+  background-color: #fff;
+  text-align: left;
+}
+
+.textPreset1 {
   font: var(--text-preset-inter-1);
 }
 
-.preset2 {
+.textPreset2 {
   font: var(--text-preset-inter-2);
 }
 
-.preset3 {
+.textPreset3 {
   font: var(--text-preset-inter-3);
 }
 
-.preset4 {
+.textPreset4 {
   font: var(--text-preset-inter-4);
 }
 
-.preset5 {
+.textPreset5 {
   font: var(--text-preset-inter-5);
 }
 
-.preset6 {
+.textPreset6 {
   font: var(--text-preset-inter-6);
+}
+
+.left {
+justify-content: flex-start;
+text-align: left;
+}
+
+.center {
+justify-content: center;
+text-align: center;
+}
+
+.right {
+justify-content: flex-end;
+text-align: right;
 }
