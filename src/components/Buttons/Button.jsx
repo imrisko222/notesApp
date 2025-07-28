@@ -9,26 +9,25 @@ const Button = ({
   cancelLabel,
   confirmLabel,
   textSize = "textPreset3",
-  align = 'center',
-  isActive = true
+  align = "center",
+  isActive = false,
 }) => {
-  const classNames = clsx (
+  const classNames = clsx(
     styles[variant],
     styles[align],
     textSize && styles[textSize]
   );
-  const contentClass = clsx(
-    styles.content,
-    !isActive && styles.noEndIcon
-  )
+
+  const contentClass = clsx(styles.content, !isActive && styles.noEndIcon);
 
   return (
     <button className={classNames}>
       <div className={contentClass}>
-
-      {icon && <span className={styles.icon}>{icon}</span>}
-      <span>{children}</span>
-      {isActive && endIcon && <span className={styles.endIcon}>{endIcon}</span>}
+        {icon && <span className={styles.icon}>{icon}</span>}
+        <span>{children}</span>
+        {isActive && endIcon && (
+          <span className={styles.endIcon}>{endIcon}</span>
+        )}
       </div>
     </button>
   );
