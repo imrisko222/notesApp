@@ -10,8 +10,13 @@ const Button = ({
   confirmLabel,
   textSize = "textPreset3",
   align = "center",
-  isActive = false,
+  isActive = true,
+  onMouseEnter,
+  onMouseLeave,
+  onClick,
 }) => {
+  console.log("isActive:", isActive, "endIcon:", endIcon);
+
   const classNames = clsx(
     styles[variant],
     styles[align],
@@ -21,13 +26,22 @@ const Button = ({
   const contentClass = clsx(styles.content, !isActive && styles.noEndIcon);
 
   return (
-    <button className={classNames}>
+    <button
+      className={classNames}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      onClick={onClick}
+    >
       <div className={contentClass}>
         {icon && <span className={styles.icon}>{icon}</span>}
-        <span>{children}</span>
-        {isActive && endIcon && (
-          <span className={styles.endIcon}>{endIcon}</span>
-        )}
+        <span className={styles.name}>{children}</span>
+
+        <span
+          className={styles.endIcon}
+          style={{ visibility: isActive && endIcon ? "visible" : "hidden" }}
+        >
+          {endIcon}
+        </span>
       </div>
     </button>
   );

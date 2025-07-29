@@ -34,7 +34,7 @@ const Navigation = () => {
           variant="navigation"
           align="left"
           isActive={activeButton === "all" || hoveredButton === "all"}
-          onMouseEnter={() => onMouseEnter("all")}
+          onMouseEnter={() => handleMouseEnter("all")}
           onMouseLeave={handleMouseLeave}
           onClick={() => handleClick("all")}
         >
@@ -46,7 +46,7 @@ const Navigation = () => {
           textSize="textPreset4"
           variant="navigation"
           isActive={activeButton === "archived" || hoveredButton === "archived"}
-          onMouseEnter={() => onMouseEnter("archived")}
+          onMouseEnter={() => handleMouseEnter("archived")}
           onMouseLeave={handleMouseLeave}
           onClick={() => handleClick("archived")}
         >
@@ -54,7 +54,12 @@ const Navigation = () => {
         </Button>
       </section>
       <section className={styles.tagNav}>
-        <Button variant="navigation" icon={<TagIcon />} align="left">
+        <Button
+          variant="navigation"
+          icon={<TagIcon />}
+          textSize="textPreset4"
+          align="left"
+        >
           nieco
         </Button>
       </section>
