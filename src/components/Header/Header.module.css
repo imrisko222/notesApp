@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1168px;
+  height: 81px;
+  padding: 0 32px;
+  /* bord zmaz */
+  border: 1px solid orange;
+}
+
+.headerContainer h3 {
+  white-space: nowrap;
+  color: var(--color-neutral-950);
+  font: var(--text-preset-inter-1);
+}
+
+.headerContainer input {
+  width: 30%;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.headerContainer svg {
+  align-self: center;
+  width: 42px;
+  height: 42px;
+  color: var(--color-neutral-500);
+  margin-left: 16px;
+}

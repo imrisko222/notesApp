@@ -10,7 +10,7 @@ const Button = ({
   confirmLabel,
   textSize = "textPreset3",
   align = "center",
-  isActive = true,
+  isActive,
   onMouseEnter,
   onMouseLeave,
   onClick,
@@ -20,7 +20,8 @@ const Button = ({
   const classNames = clsx(
     styles[variant],
     styles[align],
-    textSize && styles[textSize]
+    textSize && styles[textSize],
+    isActive && styles.active
   );
 
   const contentClass = clsx(styles.content, !isActive && styles.noEndIcon);

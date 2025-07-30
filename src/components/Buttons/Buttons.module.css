@@ -105,6 +105,7 @@ button {
 .navigation {
   background-color: #fff;
   text-align: left;
+  color: var(--color-neutral-700);
   display: flex;
   width: 100%;
 }

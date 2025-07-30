@@ -23,7 +23,7 @@ const Navigation = () => {
 
   return (
     <div className={styles.navigationContainer}>
-      <section>
+      <section className={styles.logo}>
         <Logo />
       </section>
       <section className={styles.mainNav}>
@@ -53,7 +53,9 @@ const Navigation = () => {
           Archived Notes
         </Button>
       </section>
+      <div className={styles.devider}></div>
       <section className={styles.tagNav}>
+        <h3>Tags</h3>
         <Button
           variant="navigation"
           icon={<TagIcon />}
@@ -61,6 +63,14 @@ const Navigation = () => {
           align="left"
         >
           nieco
+        </Button>
+        <Button
+          variant="navigation"
+          icon={<TagIcon />}
+          textSize="textPreset4"
+          align="left"
+        >
+          nieco dalsie
         </Button>
       </section>
     </div>

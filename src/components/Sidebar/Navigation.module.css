@@ -11,8 +11,34 @@
   border-right: 1px solid var(--color-neutral-200);
 }
 
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
 .mainNav {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.tagNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.tagNav h3 {
+  font: var(--text-preset-inter-4);
+  color: var(--color-neutral-500);
+  padding: 0 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.devider {
+  height: 1px;
+  background-color: var(--color-neutral-200);
 }
