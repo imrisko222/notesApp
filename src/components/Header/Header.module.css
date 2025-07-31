@@ -11,8 +11,13 @@
   width: 1168px;
   height: 81px;
   padding: 0 32px;
-  /* bord zmaz */
-  border: 1px solid orange;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 .headerContainer h3 {
@@ -21,16 +26,9 @@
   font: var(--text-preset-inter-1);
 }
 
-.headerContainer input {
-  width: 30%;
-  min-width: 250px;
-  max-width: 350px;
-}
-
 .headerContainer svg {
   align-self: center;
-  width: 42px;
-  height: 42px;
+  width: 24px;
+  height: 24px;
   color: var(--color-neutral-500);
-  margin-left: 16px;
 }
