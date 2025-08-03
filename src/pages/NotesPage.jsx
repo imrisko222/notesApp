@@ -3,6 +3,8 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Navigation from "../components/Sidebar/Navigation";
 import NoteListPanel from "../components/Sidebar/NoteListPanel";
+import NoteActions from "../components/NoteActions/NoteActions";
+import EditorPanel from "../components/EditorPanel/EditorPanel";
 // styles
 import styles from "./NotesPage.module.css";
 
@@ -19,10 +21,10 @@ const NotesPage = () => {
         <NoteListPanel />
       </section>
       <main className={styles.columnC}>
-        <h3>nieco</h3>
+      <EditorPanel />
       </main>
-      <div>
-        <h3>daco</h3>
+      <div className={styles.columnD}>
+        <NoteActions />
       </div>
     </div>
   );

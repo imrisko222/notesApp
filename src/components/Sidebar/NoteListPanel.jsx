@@ -7,7 +7,7 @@ import styles from "./Sidebar.module.css";
 const NoteListPanel = () => {
   return (
     <div className={styles.allListContainer}>
-      <Button icon={<PlusIcon />}>Create New Note</Button>
+      <Button icon={<PlusIcon />} >Create New Note</Button>
       <NoteList />
     </div>
   );

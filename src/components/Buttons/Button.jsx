@@ -6,8 +6,6 @@ const Button = ({
   icon,
   endIcon,
   children,
-  cancelLabel,
-  confirmLabel,
   textSize = "textPreset3",
   align = "center",
   isActive,

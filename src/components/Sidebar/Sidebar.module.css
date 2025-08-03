@@ -8,3 +8,12 @@
   /* border vymazat */
   border: 1px solid red;
 }
+
+.allListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  padding: 20px 16px 20px 32px;
+  border-right: 1px solid var(--color-neutral-200);
+  }

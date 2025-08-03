@@ -49,7 +49,7 @@ button {
 
 .border {
   background-color: #f0f0f0;
-  color: var(--color-neutral-950);
+  /* color: var(--color-neutral-950); */
   border: var(--color-neutral-300) 1px solid;
 }
 
