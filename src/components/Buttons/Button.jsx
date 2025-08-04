@@ -17,12 +17,16 @@ const Button = ({
 
   const classNames = clsx(
     styles[variant],
-    styles[align],
+    // styles[align],
     textSize && styles[textSize],
     isActive && styles.active
   );
 
-  const contentClass = clsx(styles.content, !isActive && styles.noEndIcon);
+  const contentClass = clsx(
+    styles.content,
+    styles[align],
+    !isActive && styles.noEndIcon
+  );
 
   return (
     <button
@@ -33,7 +37,7 @@ const Button = ({
     >
       <div className={contentClass}>
         {icon && <span className={styles.icon}>{icon}</span>}
-        <span className={styles.name}>{children}</span>
+        <span className={styles[align]}>{children}</span>
 
         <span
           className={styles.endIcon}
