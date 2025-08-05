@@ -7,17 +7,17 @@ const Button = ({
   endIcon,
   children,
   textSize = "textPreset3",
+  // align,
   align = "center",
   isActive,
   onMouseEnter,
   onMouseLeave,
   onClick,
 }) => {
-  console.log("isActive:", isActive, "endIcon:", endIcon);
+  console.log(align);
 
   const classNames = clsx(
     styles[variant],
-    // styles[align],
     textSize && styles[textSize],
     isActive && styles.active
   );
@@ -37,11 +37,11 @@ const Button = ({
     >
       <div className={contentClass}>
         {icon && <span className={styles.icon}>{icon}</span>}
-        <span className={styles[align]}>{children}</span>
+        <span className={styles.name}>{children}</span>
 
         <span
           className={styles.endIcon}
-          style={{ visibility: isActive && endIcon ? "visible" : "hidden" }}
+          style={{ display: isActive && endIcon ? "block" : "none" }}
         >
           {endIcon}
         </span>

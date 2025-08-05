@@ -44,6 +44,7 @@ const Navigation = () => {
           icon={<ArchiveIcon />}
           endIcon={<ArrowRigth />}
           textSize="textPreset4"
+          align="left"
           variant="navigation"
           isActive={activeButton === "archived" || hoveredButton === "archived"}
           onMouseEnter={() => handleMouseEnter("archived")}

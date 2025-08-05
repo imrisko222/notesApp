@@ -73,8 +73,8 @@ button {
 
 .content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
   width: 100%;
   gap: 8px;
 }
@@ -138,19 +138,20 @@ button {
 
 .left {
   justify-content: flex-start;
-  text-align: left;
 }
 
-.content .center {
+.center {
   justify-content: center;
-  text-align: center;
 }
 
 .right {
   justify-content: flex-end;
-  text-align: right;
 }
 
 .active {
   background-color: var(--color-neutral-100);
+}
+
+.name {
+  border: 1px solid gray;
 }
