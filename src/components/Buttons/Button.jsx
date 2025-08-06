@@ -9,6 +9,7 @@ const Button = ({
   textSize = "textPreset3",
   // align,
   align = "center",
+  width,
   isActive,
   onMouseEnter,
   onMouseLeave,
@@ -18,6 +19,7 @@ const Button = ({
 
   const classNames = clsx(
     styles[variant],
+    styles[width],
     textSize && styles[textSize],
     isActive && styles.active
   );

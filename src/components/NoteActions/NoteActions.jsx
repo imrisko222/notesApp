@@ -6,10 +6,20 @@ import styles from "./NoteActions.module.css";
 const NoteActions = () => {
   return (
     <div className={styles.container}>
-      <Button icon={<AchiveIcon />} textSize="textPreset4" variant="border">
+      <Button
+        icon={<AchiveIcon />}
+        textSize="textPreset4"
+        variant="border"
+        align="left"
+      >
         Archive Note
       </Button>
-      <Button icon={<DeleteIcon />} textSize="textPreset4" variant="border">
+      <Button
+        icon={<DeleteIcon />}
+        textSize="textPreset4"
+        variant="border"
+        align="left"
+      >
         Delete Note
       </Button>
     </div>
