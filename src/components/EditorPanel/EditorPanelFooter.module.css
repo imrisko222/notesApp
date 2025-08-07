@@ -11,7 +11,4 @@
   align-items: center;
   /* width: 100%; */
   gap: 16px;
-
-  /* toto neskor vratit border-top: 1px solid var(--color-neutral-200); */
-  border: 1px solid green;
 }
