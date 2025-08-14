@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.settingsContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100%;
+}
+
+.menuWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 16px 20px 32px;
+  height: 100%;
+  width: auto;
+  border-right: 1px solid var(--color-neutral-200);
+}
+
+.itemB {
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  border: 1px solid var(--color-neutral-200);
+}
