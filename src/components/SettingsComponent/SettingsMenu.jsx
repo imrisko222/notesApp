@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // components
 import Button from "../Buttons/Button";
 // icons
@@ -10,38 +10,50 @@ import EndIcon from "../icons/chevron-right-md.svg?react";
 
 import styles from "./Settings.module.css";
 const SettingsMenu = () => {
+  const [activeIndex, setActiveIndex] = useState(1);
+
+  const handleActiveIndex = (index) => {
+    setActiveIndex(index);
+  };
+
   return (
     <div className={styles.menuWrapper}>
       <Button
-        variant="navigation"
+        variant="menu"
         icon={<SunIcon />}
         endIcon={<EndIcon />}
         align="left"
         textSize="textPreset4"
+        isActive={activeIndex === 1}
+        onClick={() => handleActiveIndex(1)}
       >
         Color Theme
       </Button>
       <Button
-        variant="navigation"
+        variant="menu"
         icon={<FontIcon />}
         endIcon={<EndIcon />}
         align="left"
         textSize="textPreset4"
+        isActive={activeIndex === 2}
+        onClick={() => handleActiveIndex(2)}
       >
         Font Theme
       </Button>
       <Button
-        variant="navigation"
+        variant="menu"
         icon={<LockIcon />}
         endIcon={<EndIcon />}
         align="left"
         textSize="textPreset4"
+        isActive={activeIndex === 3}
+        onClick={() => handleActiveIndex(3)}
       >
         Change Password
       </Button>
       <div className={styles.divider}></div>
       <Button
-        variant="navigation"
+        variant="menu"
         icon={<LogoutIcon />}
         endIcon={<EndIcon />}
         align="left"

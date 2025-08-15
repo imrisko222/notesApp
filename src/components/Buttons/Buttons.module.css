@@ -108,6 +108,21 @@ button {
   width: 100%;
 }
 
+.menu {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 240px;
+  padding: 8px;
+  border-radius: 6px;
+  /* zmaz */
+}
+
+.menu:hover {
+  background-color: var(--color-neutral-100);
+}
+
 .textPreset1 {
   font: var(--text-preset-inter-1);
 }

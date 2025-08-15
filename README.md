@@ -16,8 +16,14 @@ If you are developing a production application, we recommend using TypeScript wi
 komponenta: co treba urobit
 
 - NoteActions.jsx:
+
   1. nastavit, kedy sa ma zobrazit archive note alebo restore note
   2. pridat eventy, pre jednotlive buttons
+
 - NotesWorkspace.jsx:
+
   1. dorobit css, napr. rozlozenie: sirku pre jednotlive komponenty
   2. nastavit nezobrazovanie NoteActions.jsx, ked sa pridava nova note - zrejme podmienene renderovanie
+
+- SettingsMenu.jsx:
+  1. zabezpecit, aby ked sa na jeden z Buttonov kliklo, tak aby sa zobrazila endIcona
