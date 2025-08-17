@@ -9,7 +9,7 @@ import LogoutIcon from "../icons/logout.svg?react";
 import EndIcon from "../icons/chevron-right-md.svg?react";
 
 import styles from "./Settings.module.css";
-const SettingsMenu = () => {
+const SettingsMenu = ({ onClick }) => {
   const [activeIndex, setActiveIndex] = useState(1);
 
   const handleActiveIndex = (index) => {
@@ -58,6 +58,7 @@ const SettingsMenu = () => {
         endIcon={<EndIcon />}
         align="left"
         textSize="textPreset4"
+        onClick={onClick}
       >
         Logout
       </Button>

@@ -5,11 +5,18 @@ import NotesPage from "./pages/NotesPage";
 import "./App.css";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+
+  const loginStateToggling = () => {
+    setIsLoggedIn(!isLoggedIn);
+  };
+
   return (
     <>
       {/* <Login /> */}
       {/* <Sidebar /> */}
-      <NotesPage />
+      {isLoggedIn ? <NotesPage onClick={loginStateToggling} /> : <Login />}
+      {/* <NotesPage /> */}
     </>
   );
 }

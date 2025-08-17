@@ -4,7 +4,7 @@ import SettingsIcon from "../icons/setting.svg?react";
 import SearchIcon from "../icons/search.svg?react";
 import styles from "./Header.module.css";
 
-const Header = () => {
+const Header = ({ onClick }) => {
   return (
     <div className={styles.headerContainer}>
       <h3>All Notes</h3>
@@ -14,7 +14,7 @@ const Header = () => {
           placeholderText="Search by title, content, or tags... "
           startIcon={<SearchIcon />}
         />
-        <SettingsIcon />
+        <SettingsIcon onClick={onClick} className={styles.settingsIcon} />
       </div>
     </div>
   );
